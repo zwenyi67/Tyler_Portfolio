@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYLER</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+
+
+    <nav class="navbar navbar-expand-lg navbg sticky-lg-top sticky-md-top sticky-sm-top py-3">
+        <div class="container">
+            <a class="logo" href="#">TYL<Strong>E</Strong>R</a>
+            <div class="collapse navbar-collapse navitem" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home" onclick="setActive(event)">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" onclick="setActive(event)">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" onclick="setActive(event)">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" onclick="setActive(event)">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" onclick="setActive(event)">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navi-bar navbar-dark bg-dark fixed-top py-3">
+        <div class="container-fluid">
+            <a class="logo" href="#">TYL<Strong>E</Strong>R</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><a style="text-decoration: none;" class=""
+                            href="#">TYL<Strong>E</Strong>R</a></h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- <div class="side-img bg-dark">
+                        <img class="" src="image/tyler.jpg" alt="">
+                    </div> -->
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#home" onclick="setActive(event)">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" onclick="setActive(event)">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" onclick="setActive(event)">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" onclick="setActive(event)">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" onclick="setActive(event)">CONTACT</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex home-head px-5" id="home">
+        <div class="py-4 ">
+            <div class="row">
+                <div id="profile-image" class="col-lg-5 col-md-12 col-sm-12 mb-5 mt-3 animate__animated ">
+                    <div class="d-flex justify-content-center">
+                        <div class="pimg">
+                            <img src="image/tyler.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;" class="col-lg-7 col-md-12 col-sm-12 home-body ">
+                    <div id="profile-box" style="max-width: 100%;" class="animate__animated">
+                        <div class="justify-content-right mb-lg-4 mb-sm-3">
+                            <div class="home-name">Hello, I am <b>TYLER</b>.</div>
+                        </div>
+                        <div class="home-content d-flex justify-content-right mb-lg-2 mb-sm-5">
+                            <h3>FullStack Developer</h3>
+                        </div>
+                        <div class="d-flex justify-content-right">
+                            <p class="home-para ">Hello! I'm Tyler a passionate and self-taught developer with a solid
+                                foundation in Software &
+                                Web
+                                development industry, I am committed to building responsive and interactive websites
+                                using the
+                                latest
+                                web technologies. </p>
+                        </div>
+                        <div class="home-sci d-flex justify-content-right">
+                            <a target="_blank" href="https://www.facebook.com/nyizin.tun.56"><i class="fab fa-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/nyi_zin_htun"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/zwe-nyi-0b5452312"><i class="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://github.com/zwenyi67"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex justify-content-right">
+                            <a class="form" href="#">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about" class="">
+
+    </div>
+    <div style="background-color: rgb(12, 12, 12);" class="container-fluid hidden p-4">
+        <div class="container py-4">
+            <div class="d-flex justify-content-center mb-3">
+                <i class="fa-solid fa-circle-info fs-5" style="color: #00abf0;"></i>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="fs-5 mb-3 text-white">Who I Am</div>
+            </div>
+            <div class="d-flex justify-content-center mb-5">
+                <h1 style="border-bottom: 3px solid #00abf0;" class="fs-3 text-white">ABOUT ME</h1>
+            </div>
+
+            <div id="who" class="row mt-5">
+                <div style="overflow-x: hidden;" class="col-lg-6 mt-3 mb-4">
+                    <div id="personal" style="max-width: 100%;" class="animate__animated">
+                        <div class="card bg-dark ">
+                            <div class="card-header text-white py-3 fs-4">
+                                PERSONAL DETAILS
+                            </div>
+                            <div class="card-body py-3">
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Full Name</label>
+                                        <input type="text" value="Zwe Nyi Nyi" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">NickName</label>
+                                        <input type="text" value="Tyler" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Date of Birth</label>
+                                        <input type="text" value="July 7, 2004" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Gender</label>
+                                        <input type="text" value="Male" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Email</label>
+                                        <input type="text" value="zwenyinyiznn67@gmail.com" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Phone</label>
+                                        <input type="text" value="+959773256169" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Date of Birth</label>
+                                        <input type="text" value="July 7, 2004" disabled>
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="" class="label">Gender</label>
+                                        <input type="text" value="Male" disabled>
+                                    </div>
+                                    <div class="col-lg-12 mb-3">
+                                        <label for="" class="label">Address</label>
+                                        <textarea type="text"
+                                            disabled>No(19), U San Phay Ward, Thingangyun Tsp, Yangon.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;" class="col-lg-6 mt-3 mb-4">
+                    <div id="education" style="max-width: 100%;" class="animate__animated">
+                        <div class="container-fluid education pt-3">
+                            <p>
+                                My journey in web development began during my studies as an ICT student, where I passed
+                                the
+                                JAPAN ITPEC FE vocational certificate.
+                                This period marked my introduction to Java programming, my first programming language.
+                                I developed mid-range projects such as a School Management System, a Point of Sale (POS)
+                                system, and a Gym Platform connecting users and trainers.
+                            </p>
+                            <p>
+                                To further my expertise, I pursued a major in Computing IT through NCC Education,
+                                successfully completing the NCC Level 5 Diploma.
+                                During this time, I developed several web-based projects.
+                            </p>
+                            <p>
+                                I have a solid foundation in both backend and frontend development, with hands-on
+                                experience
+                                in a variety of programming languages and frameworks:
+
+                            </p>
+
+                            <ul>
+                                <li>Java (JavaFX): Developed robust desktop applications, including a school management
+                                    system and gym platform. </li>
+
+                                <li>PHP (Laravel): Created dynamic, scalable web applications with a focus on clean
+                                    architecture and seamless user experiences. </li>
+
+                                <li>JavaScript, jQuery, AJAX, React: Built interactive and efficient front-end web
+                                    applications, ensuring responsive and dynamic content updates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="skills">
+
+    </div>
+    <!--  style="background-color: white;" -->
+    <div id="skill-container" style="background-color: rgb(22, 22, 22);" class="container-fluid p-4 py-5">
+        <div class="container py-4 ">
+
+            <div id="skill-box" class="d-flex justify-content-center mb-0 pt-5">
+                <h1 style="border-bottom: 3px solid #00abf0;" class="fs-3 text-white">MY SKILLS</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+            </div>
+            <div id="first-box" class="row mt-3 animate__animated">
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="html">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="html" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 text-white text-center">HTML & CSS / Bootstrap </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill  mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="javascript">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="javascript" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">JavaScript / REACT</div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="laravel">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="laravel" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">PHP / LARAVEL</div>
+
+                </div>
+                <div id="show-skills"
+                    class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="java">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="java" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">JAVA</div>
+
+                </div>
+            </div>
+            <div id="second-box" class="row d-flex justify-content-center animate__animated">
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="sql">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="sql" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">MySQL</div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill  mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="dsa">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="dsa" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">Data Structure & Algorithms</div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="skill mb-3 mt-5">
+                        <div class="outer">
+                            <div class="inner">
+                                <div id="mgmt">
+                                    65%
+                                </div>
+                            </div>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                                <linearGradient id="GradientColor">
+                                    <stop offset="0%" stop-color="#e91e63" />
+                                    <stop offset="100%" stop-color="#673ab7" />
+                                </linearGradient>
+                            </defs>
+                            <circle class="mgmt" cx="80" cy="80" r="70" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="mt-1 d-flex justify-content-center text-white">Development & Management</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- for small width -->
+    <div id="skill-resp-container" style="background-color: rgb(22, 22, 22);" class="container-fluid p-4 py-5">
+        <div class="container py-4 ">
+
+            <div id="skill-box" class="d-flex justify-content-center mb-0 pt-5">
+                <h1 style="border-bottom: 3px solid #00abf0;" class="fs-3 text-white">MY SKILLS</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+            </div>
+            <div class="row mt-3">
+                <div style="overflow-x: hidden;"
+                  id="htmlBox"  class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="html-box" class="animate__animated">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="html">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="html" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 text-white text-center">HTML & CSS / Bootstrap </div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;"
+                id="javascriptBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="javascript-box" class="animate__animated">
+                        <div class="skill  mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="javascript">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="javascript" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">JavaScript / REACT</div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;"
+                id="laravelBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="laravel-box" class="animate__animated">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="laravel">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="laravel" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">PHP / LARAVEL</div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;"
+                id="javaBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="java-box" class="animate__animated">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="java">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="java" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">JAVA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center animate__animated">
+                <div style="overflow-x: hidden;"
+                id="sqlBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="sql-box" class="animate__animated">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="sql">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="sql" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">MySQL</div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;"
+                id="dsaBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div style="max-width: 100%;" id="dsa-box" class="animate__animated">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="dsa">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="dsa" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">Data Structure &
+                            Algorithms</div>
+                    </div>
+                </div>
+                <div style="overflow-x: hidden;"
+                id="mgmtBox" class="col-lg-3 col-md-6 d-flex flex-column justify-content-center align-items-center ">
+                    <div style="max-width: 100%;" id="mgmt-box" class="animate__animated ">
+                        <div class="skill mb-3 mt-5">
+                            <div class="outer">
+                                <div class="inner">
+                                    <div id="mgmt">
+                                        65%
+                                    </div>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#e91e63" />
+                                        <stop offset="100%" stop-color="#673ab7" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="mgmt" cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="skill-text mt-1 d-flex justify-content-center text-white">Development & Management
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="projects">
+
+    </div>
+    <div style="background-color: rgb(12, 12, 12);" class="container-fluid p-4">
+        <div class="container py-4">
+
+            <div class="d-flex justify-content-center mb-5">
+                <h1 style="border-bottom: 3px solid #00abf0;" class="fs-3 text-white">PROJECTS</h1>
+            </div>
+            <div style="overflow-x: hidden;" id="fitnessgurubox">
+                <a style="max-width: 100%;" id="fitnessguru" target="_blank" href="/fitness_guru.html"
+                    class="row mt-3 mb-3 py-3 animate__animated">
+                    <div class="col-lg-7 mb-3 mt-3">
+                        <img src="/image/fitness_guru_cover.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-lg-5 mb-3 mt-3 ">
+                        <div class="project-title">FITNESS GURU</div>
+                        <div class="d-flex mb-3">
+                            <div class="tech">Bootstrap</div>
+                            <div class="tech">JQuery</div>
+                            <div class="tech">AJAX</div>
+                            <div class="tech">Livewire</div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="tech">Laravel</div>
+                            <div class="tech">MySQL</div>
+                        </div>
+                        <div class="project-desc mb-5">It is a fitness platform that connects website users and
+                            authentic personal trainers as well as an e-commerce based website that sells protein,
+                            supplement, gym equipments and gym accessories.
+                        </div>
+                        <div>
+                            <button target="_blank" href="/fitness_guru.html" class="project-btn">Go To Project <i
+                                    class="fa-solid fa-arrow-right-long fa-bounce ms-2"></i></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="overflow-x: hidden;" id="brainblitzbox">
+                <a id="brainblitz" target="_blank" href="https://superlative-tanuki-3b9c52.netlify.app/"
+                    class="row mt-3 mb-3 py-3 animate__animated">
+                    <div class="col-lg-7 mb-3 mt-3">
+                        <img src="/image/brainblitz_cover.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-lg-5 mb-3 mt-3">
+                        <div class="project-title">BrainBlitz</div>
+                        <div class="d-flex mb-3">
+                            <div class="tech">Bootstrap</div>
+                            <div class="tech">React</div>
+                            <div class="tech">Laravel</div>
+                            <div class="tech">MySQL</div>
+                        </div>
+                        
+                        <div class="project-desc mb-5">BrainBlitz is an online quiz platform offering engaging and
+                            educational
+                            quizzes on various topics and difficulty levels.
+                            The platform features dynamic quiz presentation, timed quizzes, and celebratory animations
+                            for a
+                            fun and interactive experience.
+                        </div>
+                        <div>
+                            <button href="https://superlative-tanuki-3b9c52.netlify.app/" class="project-btn">Go To
+                                Project
+                                <i class="fa-solid fa-arrow-right-long fa-bounce ms-2"></i></button>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+            <div style="overflow-x: hidden;" id="tommorrowbox">
+                <a id="tommorrow" href="/fitness_guru.html" class="row mt-3 mb-3 py-3 animate__animated">
+                    <div class="col-lg-7 mb-3 mt-3">
+                        <img src="/image/tommorrowland_cover.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-lg-5 mb-3 mt-3">
+                        <div class="project-title">TommorrowLand</div>
+                        <div class="d-flex mb-3">
+                            <div class="tech">Bootstrap</div>
+                            <div class="tech">JQuery</div>
+                            <div class="tech">Pure PHP</div>
+                            <div class="tech">MySQL</div>
+                        </div>
+                        <div class="project-desc mb-5">Developed an entertainment website for EDM events, 
+                            featuring ticket sales and e-commerce functionality, enjoying a seamless shopping experience.
+                        </div>
+                        <div>
+                            <button href="/fitness_guru.html" class="project-btn">Go To Project <i
+                                    class="fa-solid fa-arrow-right-long fa-bounce ms-2"></i></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="overflow-x: hidden;" id="unitbox">
+            <a id="unit" target="_blank" href="https://66787517b8e00cd2f298646d--helpful-quokka-fc646b.netlify.app/"
+                class="row mt-3 mb-3 py-3 animate__animated">
+                <div class="col-lg-7 mb-3 mt-3">
+                    <img src="/image/unit_converter_cover.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col-lg-5 mb-3 mt-3">
+                    <div class="project-title">Unit Converter</div>
+                    <div class="d-flex mb-3">
+                        <div class="tech">HTML / CSS</div>
+                        <div class="tech">Bootstrap</div>
+                        <div class="tech">React</div>
+                    </div>
+                    <div class="d-flex">
+                        
+                    </div>
+                    <div class="project-desc mb-5">It is a simple unit converter website, including length, weight, temperature measurments. 
+                    </div>
+                    <div>
+                        <button target="_blank" href="https://66787517b8e00cd2f298646d--helpful-quokka-fc646b.netlify.app/
+                        " class="project-btn">Go To Project <i
+                                class="fa-solid fa-arrow-right-long fa-bounce ms-2"></i></button>
+                    </div>
+                </div>
+            </a>
+            </div>
+
+
+            <a href="/fitness_guru.html" class="row mt-3 mb-3 py-3">
+                <div class="col-lg-7 mb-3 mt-3">
+                    <img src="/image/fitness_guru_cover.png" class="card-img-top" alt="...">
+                </div>
+                <div class="col-lg-5 mb-3 mt-3">
+                    <div class="project-title">WiseScope</div>
+                    <div class="d-flex mb-3">
+                        <div class="tech">Bootstrap</div>
+                        <div class="tech">JQuery</div>
+                        <div class="tech">AJAX</div>
+                        <div class="tech">Livewire</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="tech">Laravel</div>
+                        <div class="tech">MySQL</div>
+                    </div>
+                    <div class="project-desc mb-5">It is a fitness platform that connects website users and
+                        authentic personal trainers as well as an e-commerce based website that sells protein,
+                        supplement, gym equipments and gym accessories.
+                    </div>
+                    <div>
+                        <button href="/fitness_guru.html" class="project-btn">Go To Project <i
+                                class="fa-solid fa-arrow-right-long fa-bounce ms-2"></i></button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="contact">
+
+    </div>
+    <div class="container contact p-4 py-5 mt-2 mb-2">
+        <div class="row">
+            <div class="col-lg-6">
+                    <div class="d-flex justify-content-start text-white">
+                        <h1 class="py-2">CONTACT ME</h1>
+                    </div>
+                    <div class="d-flex justify-content-start ">
+                        <div class=" d-flex flex-column justify-content-start">
+                        <a class="text-decoration-none fs-5 mb-2" href="mailto:zwenyinyiznn67@gmail.com"><i
+                            class="fa fa-envelope"></i><span class="ms-2">zwenyinyiznn67@gmail.com</span>
+                    </a>
+                    <a class="text-decoration-none fs-5" href="tel:+959773256169"><i class="fa fa-phone"></i><span class="ms-2">+959773256169</span>
+                </a>
+            </div>
+                    </div>
+                <div class="home-sci d-flex justify-content-start">
+                    <a target="_blank" href="https://www.facebook.com/nyizin.tun.56"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/nyi_zin_htun"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/zwe-nyi-0b5452312"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/zwenyi67"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form action="">
+                    <div class="contactbody ">
+                        <input class="form-control py-2" type="text" placeholder="Your Name">
+                        <input class="form-control py-2" type="text" placeholder="Your Email">
+                        <textarea class="form-control py-2 mb-4" name="" id="" placeholder="Your Message"></textarea>
+                        <a class="subbtn" href="#">Submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section id="footer" class="bg-dark text-white py-2">
+            <p class="text-center pt-2">Copyright &copy; 2024 Tyler. All rights reserved.</p>
+    </section>
+
+
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
