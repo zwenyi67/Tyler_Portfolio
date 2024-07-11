@@ -9,8 +9,9 @@ body {
 
 :root {
     --animate-duration: 2s;
-    --animate-delay: 2s;
+    --animate-delay: 1s;
   }
+  
 
 .education p {
     color: white;
