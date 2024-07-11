@@ -127,13 +127,23 @@
                             <a target="_blank" href="https://github.com/zwenyi67"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <div class="d-flex justify-content-right">
-                            <a class="form" href="#">Download CV</a>
+                            <a class="form" onclick="downloadFile()">Download CV</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function downloadFile() {
+          const link = document.createElement('a');
+          link.href = '/ZweNyiNyi_ResumeForm.pdf';
+          link.download = 'document.pdf';
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        }
+      </script>
 
 
     <div id="about" class="">
